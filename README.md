@@ -1,6 +1,10 @@
 
 ## 27.12.2023
 
+### Backports!
+- The *Backports Project* enables old kernels to run the latest drivers. https://backports.wiki.kernel.org/index.php/Main_Page
+- *Backporting* is the process of making new software run on something old. A version of something new that's been modified to run on something old is called a "backport".
+
 ### OpenWRT Build System Essentials (..being already sick of rereading it over and over, I'd rather write it down here)
 - https://openwrt.org/docs/guide-developer/toolchain/buildsystem_essentials
 - **meta** - mk files, config files, patches, etc.
