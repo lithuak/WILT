@@ -7,6 +7,9 @@
 - *target/linux* - contains different *targets* e.g. *target/linux/ar71xx" and the rest of it, e.g.: "target/linux/ar71xx/generic/profiles/some_models.ml", that is .mk files for target, subtargets and profiles. It also contains config files with config options!
 - *target/* overall - meta for what has to be build (after tools?..): toolchain, linux - the firmware, sdk, imagebuilder - everything except packages
 - *packages* - meta for packages to be build
+- *staging_dir/packages/<target>/* <- built .ipk, including kernel modules are here, e.g. kmod-something.ipk
+- *staging_dir/target.../root-...* contains “installed” versions of each target package again arranged with bin/, lib/, this will become the actual root directory that with some tweaking will get zipped up into the firmware image, something like root-ar71xx
+- */lib/modules* on target system will contain compiled .o kernel modules 
 
 
 ### Trivia
