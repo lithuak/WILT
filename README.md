@@ -1,15 +1,26 @@
 
 ## 27.12.2023
 
+- what is *musl libc*: small libc impl. for embedded: https://musl.libc.org/
+- *24kc*: The 24Kc is a 32-bit RISC core for high performance applications
+  Datasheet: https://s3-eu-west-1.amazonaws.com/downloads-mips/documents/MD00346-2B-24K-DTS-04.00.pdf  
+
 ### OpenWRT packaging structure:
 - architecture > target > subtarget > profile
-- *architecture*,
 - *package architecture*: `"PKGARCH defaults to $(ARCH)_$(CPU_TYPE)"`. E.g.: "mips_24kc" - MIPS is the CPU type, 24kc is the exact CPU. OR: arm_cortex-a15_neon-vfpv4
 - *target*: family of devices, sharing specific chipset:
 "In OpenWrt slang, a target usually refers to a specific family of SoCs sharing the same or very similar CPU cores and instruction sets which are used among a range of different router models.
 The ar71xx target for example refers to a series of MIPS CPU based SoCs first produced by Atheros (hence the AR prefix) and later Qualcomm."
 - *subtarget*: narrowing device class down (like only devices with NAND or NOR flash memory within selected *target*)
 - *profile*: e.g. exact model of device
+
+### ar71xx vs ath79
+- both are *targets* for specific atheros/qualcom chips
+- ath79 is better arch due to using device tree instead of board files to describe specific device (explained here nicely: https://lwn.net/Articles/809248/)
+
+"ar71xx vs. ath79 is not about drivers, but about the way the kernel is told about the hardware and how the kernel is compiled.
+ar71xx uses board files (someboardname.c) specifying the exact hardware configuration of the machine. Depending on some other factors, you may have to compile a separate kernel for every machine of the same family, causing lots of build overhead. Generic kernels (like on x86) are not really feasible with board files. The upstream Linux kernel has deprecated board files for this and other reasons.
+ath79 uses device tree (dts) to specify hardware configuration of the machine. Device tree is a textual machine description which is not compiled into the kernel, so you can simply build a single kernel compatible with hundreds of devices. You just have to supply the correct device tree files to the booting kernel, and the generic kernel will work fine. https://lwn.net/Articles/572692/ is a nice introduction to device tree, and it's fun to read."
 
 
 ### Linux Firmware:
