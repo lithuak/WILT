@@ -13,6 +13,7 @@ https://wiki.gentoo.org/wiki/Linux_firmware
 
 ### TOREAD:
 - SecureBoot: https://bbs.archlinux.org/viewtopic.php?id=271423
+- https://0pointer.net/blog/authenticated-boot-and-disk-encryption-on-linux.html
 
 # WILT
 What I've Learned Today
