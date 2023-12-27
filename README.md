@@ -15,7 +15,8 @@
 ### Trivia
 - *musl libc*: small libc impl. for embedded: https://musl.libc.org/
 - *24kc*: The 24Kc is a 32-bit RISC core for high performance applications
-  Datasheet: https://s3-eu-west-1.amazonaws.com/downloads-mips/documents/MD00346-2B-24K-DTS-04.00.pdf  
+  Datasheet: https://s3-eu-west-1.amazonaws.com/downloads-mips/documents/MD00346-2B-24K-DTS-04.00.pdf
+- http://linuxwireless.sipsolutions.net/en/developers/Documentation/Glossary/
 
 ### OpenWRT packaging structure:
 - architecture > target > subtarget > profile
