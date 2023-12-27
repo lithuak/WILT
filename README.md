@@ -13,6 +13,7 @@
 The ar71xx target for example refers to a series of MIPS CPU based SoCs first produced by Atheros (hence the AR prefix) and later Qualcomm."
 - *subtarget*: narrowing device class down (like only devices with NAND or NOR flash memory within selected *target*)
 - *profile*: e.g. exact model of device
+- example card with all parameters for specific device: https://openwrt.org/toh/hwdata/abicominternational/abicominternational_scorpion_sc300m
 
 ### ar71xx vs ath79
 - both are *targets* for specific atheros/qualcom chips
