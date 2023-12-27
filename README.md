@@ -3,8 +3,10 @@
 
 ### OpenWRT Build System Essentials (..being already sick of rereading it over and over, I'd rather write it down here)
 - https://openwrt.org/docs/guide-developer/toolchain/buildsystem_essentials
+- **meta** - mk files, config files, patches, etc.
 - *target/linux* - contains different *targets* e.g. *target/linux/ar71xx" and the rest of it, e.g.: "target/linux/ar71xx/generic/profiles/some_models.ml", that is .mk files for target, subtargets and profiles. It also contains config files with config options!
-- *target* overall - what has to be build (after tools?..): toolchain, linux - the _firmware_?, sdk, imagebuilder... what about packages?..
+- *target/* overall - meta for what has to be build (after tools?..): toolchain, linux - the firmware, sdk, imagebuilder - everything except packages
+- *packages* - meta for packages to be build
 
 
 ### Trivia
