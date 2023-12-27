@@ -1,6 +1,15 @@
 
 ## 27.12.2023
 
+### OpenWRT packaging structure:
+- architecture > target > subtarget > profile
+- *architecture*,
+- *package architecture*: "PKGARCH defaults to $(ARCH)_$(CPU_TYPE)". E.g.: "mips_24kc" - MIPS is the CPU type, 24kc is the exact CPU. OR: arm_cortex-a15_neon-vfpv4
+- *target*: family of devices, sharing specific chipset:
+"In OpenWrt slang, a target usually refers to a specific family of SoCs sharing the same or very similar CPU cores and instruction sets which are used among a range of different router models.
+The ar71xx target for example refers to a series of MIPS CPU based SoCs first produced by Atheros (hence the AR prefix) and later Qualcomm."
+- *subtarget*: narrowing device class down (like only devices with NAND or NOR flash memory within selected *target*)
+- *profile*: e.g. exact model of device
 
 
 ### Linux Firmware:
