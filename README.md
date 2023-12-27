@@ -1,6 +1,13 @@
 
 ## 27.12.2023
 
+### OpenWRT Build System Essentials (..being already sick of rereading it over and over, I'd rather write it down here)
+- https://openwrt.org/docs/guide-developer/toolchain/buildsystem_essentials
+- *target/linux* - contains different *targets* e.g. *target/linux/ar71xx" and the rest of it, e.g.: "target/linux/ar71xx/generic/profiles/some_models.ml", that is .mk files for target, subtargets and profiles. It also contains config files with config options!
+- *target* overall - what has to be build (after tools?..): toolchain, linux - the _firmware_?, sdk, imagebuilder... what about packages?..
+
+
+### Trivia
 - *musl libc*: small libc impl. for embedded: https://musl.libc.org/
 - *24kc*: The 24Kc is a 32-bit RISC core for high performance applications
   Datasheet: https://s3-eu-west-1.amazonaws.com/downloads-mips/documents/MD00346-2B-24K-DTS-04.00.pdf  
