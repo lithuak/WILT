@@ -1,6 +1,10 @@
 
 ## 27.12.2023
 
+### Linux Wireless Regulatory
+- Detailed overview: https://wireless.wiki.kernel.org/en/developers/regulatory
+- *Central Regulatory Domain Agent (CRDA)*, a userspace agent, which can be triggered to update the kernel wireless core's definition of the regulatory permissions for a specific country.
+
 ### Backports!
 - The *Backports Project* enables old kernels to run the latest drivers. https://backports.wiki.kernel.org/index.php/Main_Page
 - "*Backporting* is the process of making new software run on something old. A version of something new that's been modified to run on something old is called a "backport".
