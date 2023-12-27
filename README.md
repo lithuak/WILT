@@ -1,8 +1,12 @@
 
 ## 27.12.2023
 
+
+
+### Linux Firmware:
+
 - what is *firmware* in context of linux kernel: https://unix.stackexchange.com/questions/359989/what-is-firmware-in-linux-terminology
-- 
+
 In the Linux kernel context, firmware is software which runs on another processor in the system, e.g. a wireless controller, a GPU, a SCSI controller... This software used to be stored in ROM (of various types) attached to the relevant controller, but to reduce costs and make upgrades simpler, controllers now tend to rely on the host operating system to load their firmware for them.
 
 So firmware files aren’t used by the kernel, they’re loaded by the kernel onto other pieces of hardware. This is also what makes it vaguely acceptable to have software without source code in FLOSS systems: the argument goes that it’s not running on the main CPU but on another device.
