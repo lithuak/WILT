@@ -1,3 +1,8 @@
+## 28.12.2023
+
+### Trivia
+
+- ger or set regulatory region: `$ iw reg get` `$ iw reg set GB`
 
 ## 27.12.2023
 
