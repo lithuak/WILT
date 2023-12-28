@@ -1,5 +1,13 @@
 ## 28.12.2023
 
+### Аеророзвідка. User Stories.
+- Очі богів. Як аеророзвідка наводить артилерію на атаки ворога: https://texty.org.ua/articles/111285/ochi-bohiv-den-na-zavdanni-iz-artylerijskoyu-aerorozvidkoyu/
+- "Підіймаємо дрони, наводимо арту й відходимо". Як працює аеророзвідка ЗСУ на Донбасі: https://texty.org.ua/articles/106929/pidnimayemo-drony-navodymo-artu-i-vidkhodymo-jak-pratsjuye-aerorozvidka-na-donbasi/
+- Фурія: https://uk.wikipedia.org/wiki/%D0%A4%D1%83%D1%80%D1%96%D1%8F_(%D0%91%D0%9F%D0%9B%D0%90)
+- Фурія GS: https://uk.wikipedia.org/wiki/%D0%A4%D1%83%D1%80%D1%96%D1%8F_(%D0%91%D0%9F%D0%9B%D0%90)#/media/%D0%A4%D0%B0%D0%B9%D0%BB:UA_24th_brigade_Furia_02.jpg
+- 
+
+
 ### Trivia
 
 - ger or set regulatory region: `$ iw reg get` `$ iw reg set GB`
